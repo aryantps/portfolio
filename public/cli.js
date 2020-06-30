@@ -58,6 +58,8 @@ $(document).ready(function () {
   green();
   yellow();
   red();
+  $('#terminal').mouseup(() => $('.input').last().focus());
+  $('.input').focus();
   
     
 });
