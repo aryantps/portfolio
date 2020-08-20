@@ -3,12 +3,13 @@ body {
 }
 .terminal-window {
 	text-align: left;
-	height: 100%;
+	width: 600px;
+	height: 360px;
 	border-radius: 10px;
 	margin: auto;
 	position: relative;
 	display: block;
-	top: 5vh;
+	top: 25vh;
 	transition: all 0.5s ease;
 }
 .terminal-window.minimized {
@@ -49,7 +50,7 @@ body {
 }
 .terminal-window #terminal {
 	color: white;
-	font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+	font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier", "serif";
 	font-size: 11pt;
 	background: #30353a;
 	padding: 10px;
@@ -107,7 +108,7 @@ body {
 	text-align: center;
 	line-height: 0.1px;
 	color: white;
-    font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier", serif;
+	font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
 }
 .footer .site-code {
 	font-weight: bold;
@@ -116,11 +117,8 @@ body {
 .terminal-data {
 	display: none;
 }
-[contenteditable="true"].input {
-    white-space: nowrap;
-    width:200px;
-    overflow: hidden;
-}
+
+
 [contenteditable="true"].input br {
     display:none;
 
