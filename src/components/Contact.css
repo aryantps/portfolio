@@ -1,0 +1,138 @@
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--space-8);
+  margin-bottom: var(--space-12);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--text-primary);
+  line-height: 1.1;
+  margin-bottom: var(--space-4);
+}
+
+.contact-desc {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--space-6);
+  max-width: 90%;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  width: fit-content;
+}
+
+.social-link:hover {
+  color: var(--brand-primary);
+  transform: translateX(5px);
+}
+
+.resume-download {
+  margin-top: auto;
+  padding-top: var(--space-6);
+}
+
+.contact-form-container {
+  padding: var(--space-6);
+  background: rgba(18, 18, 22, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.form-label {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--brand-primary);
+}
+
+.form-input {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 2px var(--brand-primary-dim);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  margin-top: var(--space-2);
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.footer {
+  text-align: center;
+  padding-top: var(--space-6);
+  border-top: 1px dashed var(--border-color);
+  font-family: var(--font-mono);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.footer-code {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.footer-copyright {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 900px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .contact-desc {
+    max-width: 100%;
+  }
+}
